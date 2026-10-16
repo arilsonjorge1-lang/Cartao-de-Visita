@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartão de Visita Digital - Arilson do Rosário</title>
+    
+    <!-- Ícones do Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1a252f;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: #2c3e50;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            width: 100%;
+            max-width: 380px;
+            padding: 30px 25px;
+            text-align: center;
+            color: #ecf0f1;
+        }
+
+        .profile {
+            margin-bottom: 20px;
+        }
+
+        /* Avatar com ícone nativo */
+        .profile-avatar {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            background-color: #34495e;
+            border: 3px solid #1abc9c;
+            margin: 0 auto 15px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #ecf0f1;
+            font-size: 50px;
+        }
+
+        .profile h2 {
+            font-size: 1.5rem;
+            color: #ffffff;
+            margin-bottom: 5px;
+        }
+
+        .profile-titles {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .profile-title {
+            font-size: 0.95rem;
+            color: #1abc9c;
+            font-weight: 600;
+        }
+
+        .profile-subtitle {
+            font-size: 0.85rem;
+            color: #bdc3c7;
+        }
+
+        .section-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #7f8c8d;
+            margin-bottom: 8px;
+            text-align: center;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+
+        .tags span {
+            background-color: #34495e;
+            color: #ecf0f1;
+            padding: 5px 12px;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .tags.tools span {
+            background-color: #1abc9c22;
+            color: #1abc9c;
+            border: 1px solid #1abc9c44;
+        }
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 25px;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            color: #bdc3c7;
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.3s;
+        }
+
+        .info-item:hover {
+            color: #ffffff;
+        }
+
+        .info-item i {
+            color: #1abc9c;
+        }
+
+        .social {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            padding-top: 15px;
+            border-top: 1px solid #34495e;
+        }
+
+        .social-link {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            background-color: #34495e;
+            color: #ecf0f1;
+            padding: 10px 18px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover {
+            background-color: #3d566e;
+            color: #ffffff;
+            transform: translateY(-2px);
+        }
+
+        .social-link i {
+            font-size: 1.2rem;
+            color: #1abc9c;
+        }
+
+        .social-link:hover i {
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="profile">
+            <div class="profile-avatar">
+                <i class="fas fa-user"></i>
+            </div>
+            <h2>Arilson do Rosário</h2>
+            <div class="profile-titles">
+                <span class="profile-title">Help Desk | TI para Negócios</span>
+                <span class="profile-subtitle">Frontend Developer</span>
+            </div>
+        </div>
+
+        <!-- Ferramentas e Sistemas -->
+        <div class="section-label">Sistemas & Ferramentas</div>
+        <div class="tags tools">
+            <span>Cegid Vendus</span>
+            <span>Cegid Primavera ERP</span>
+            <span>Windows</span>
+            <span>Microsoft Office</span>
+        </div>
+
+        <!-- Tecnologias de Desenvolvimento -->
+        <div class="section-label">Desenvolvimento</div>
+        <div class="tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+        </div>
+
+        <div class="info">
+            <a href="mailto:arilson.rosario.cv@gmail.com" class="info-item">
+                <i class="fas fa-envelope"></i>
+                <span>arilson.rosario.cv@gmail.com</span>
+            </a>
+            <a href="tel:+2389930138" class="info-item">
+                <i class="fas fa-phone"></i>
+                <span>+238 9930138</span>
+            </a>
+        </div>
+
+        <div class="social">
+            <a href="https://linkedin.com/in/seu-usuario" target="_blank" class="social-link">
+                <i class="fab fa-linkedin"></i>
+                <span>LinkedIn</span>
+            </a>
+            <a href="https://github.com/arilsonjorge1-lang" target="_blank" class="social-link">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
